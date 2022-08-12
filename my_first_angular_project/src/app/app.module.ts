@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { TesteComponent } from './components/teste/teste.component';
 import { ParentDataComponent } from './components/parent-data/parent-data.component';
+import { DirectivesComponent } from './components/directives/directives.component';
 
 
 @NgModule({
@@ -11,6 +12,7 @@ import { ParentDataComponent } from './components/parent-data/parent-data.compon
     AppComponent,
     TesteComponent,
     ParentDataComponent,
+    DirectivesComponent,
   ],
   imports: [
     BrowserModule
