@@ -1,0 +1,18 @@
+<div class="divClass">
+  <table class="styled-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let animal of animals">
+        <tr class="active-row">
+          <td>{{ animal.name }}</td>
+          <td>{{ animal.type }}</td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</div>
