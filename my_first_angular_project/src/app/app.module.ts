@@ -10,6 +10,7 @@ import { ChartJsComponent } from './components/chart-js/chart-js.component';
 import { IfRenderComponent } from './components/if-render/if-render.component';
 import { EmitterComponent } from './components/emitter/emitter.component';
 import { ChangeNumberComponent } from './components/change-number/change-number.component';
+import { ListRenderComponent } from './components/list-render/list-render.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { ChangeNumberComponent } from './components/change-number/change-number.
     IfRenderComponent,
     EmitterComponent,
     ChangeNumberComponent,
+    ListRenderComponent,
   ],
   imports: [
     BrowserModule

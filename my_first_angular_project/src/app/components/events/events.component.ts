@@ -14,5 +14,10 @@ export class EventsComponent implements OnInit {
 
   showMessage(): void {
     this.show = !this.show;
+    if (this.show === true) {
+      console.log('Showing message!');
+    } else {
+      console.log('Hiding message');
+    }
   }
 }
