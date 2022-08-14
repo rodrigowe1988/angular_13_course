@@ -7,6 +7,7 @@ import { ParentDataComponent } from './components/parent-data/parent-data.compon
 import { DirectivesComponent } from './components/directives/directives.component';
 import { EventsComponent } from './components/events/events.component';
 import { ChartJsComponent } from './components/chart-js/chart-js.component';
+import { IfRenderComponent } from './components/if-render/if-render.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { ChartJsComponent } from './components/chart-js/chart-js.component';
     DirectivesComponent,
     EventsComponent,
     ChartJsComponent,
+    IfRenderComponent,
   ],
   imports: [
     BrowserModule
