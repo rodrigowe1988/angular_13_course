@@ -8,6 +8,8 @@ import { DirectivesComponent } from './components/directives/directives.componen
 import { EventsComponent } from './components/events/events.component';
 import { ChartJsComponent } from './components/chart-js/chart-js.component';
 import { IfRenderComponent } from './components/if-render/if-render.component';
+import { EmitterComponent } from './components/emitter/emitter.component';
+import { ChangeNumberComponent } from './components/change-number/change-number.component';
 
 
 @NgModule({
@@ -19,6 +21,8 @@ import { IfRenderComponent } from './components/if-render/if-render.component';
     EventsComponent,
     ChartJsComponent,
     IfRenderComponent,
+    EmitterComponent,
+    ChangeNumberComponent,
   ],
   imports: [
     BrowserModule

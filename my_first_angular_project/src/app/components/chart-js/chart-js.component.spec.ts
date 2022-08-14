@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Chart, registerables } from 'chart.js';
+Chart.register(...registerables);
 
 import { ChartJsComponent } from './chart-js.component';
 
