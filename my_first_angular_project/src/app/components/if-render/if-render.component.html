@@ -1,5 +1,4 @@
 <div class="divClass">
-	<button (click)="!canShow">Teste</button>
 	<p *ngIf="canShow">I only can appear here because my value is <b>true</b></p>
 	<h2 *ngIf="name === 'Rodrigo'; else nameNotFound">The name of the user is Rodrigo.</h2>
 	<h2 *ngIf="name === 'Rogério'; else nameNotFound">The name of the user is Rodrigo</h2>
