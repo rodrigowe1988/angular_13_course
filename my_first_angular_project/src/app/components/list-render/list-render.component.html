@@ -1,11 +1,10 @@
 <div class="divClass">
-	<h2>Animals:</h2>
-	<ul>
-		<li *ngFor="let animal of animals">
-			<hr>
-			Name: {{animal.name}}
-			<br>
-			Type: {{animal.type}}
-		</li>
-	</ul>
+  <h2>Animals:</h2>
+  <ul>
+    <li *ngFor="let animal of animals">
+      <b>Name:</b> {{ animal.name }} <b>Type:</b>{{ animal.type }}
+      <button (click)="showAge(animal)">Show age</button>
+    </li>
+  </ul>
+  <h3>{{ animalDetails }}</h3>
 </div>
