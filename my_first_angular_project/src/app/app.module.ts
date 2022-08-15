@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TesteComponent } from './components/teste/teste.component';
@@ -13,6 +14,7 @@ import { ChangeNumberComponent } from './components/change-number/change-number.
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { TableListRenderComponent } from './components/table-list-render/table-list-render.component';
 import { PipesComponent } from './components/pipes/pipes.component';
+import { TwoWayDataBindingComponent } from './components/two-way-data-binding/two-way-data-binding.component';
 
 
 @NgModule({
@@ -29,9 +31,10 @@ import { PipesComponent } from './components/pipes/pipes.component';
     ListRenderComponent,
     TableListRenderComponent,
     PipesComponent,
+    TwoWayDataBindingComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
