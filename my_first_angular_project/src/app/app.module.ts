@@ -12,6 +12,7 @@ import { EmitterComponent } from './components/emitter/emitter.component';
 import { ChangeNumberComponent } from './components/change-number/change-number.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { TableListRenderComponent } from './components/table-list-render/table-list-render.component';
+import { PipesComponent } from './components/pipes/pipes.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { TableListRenderComponent } from './components/table-list-render/table-l
     ChangeNumberComponent,
     ListRenderComponent,
     TableListRenderComponent,
+    PipesComponent,
   ],
   imports: [
     BrowserModule
