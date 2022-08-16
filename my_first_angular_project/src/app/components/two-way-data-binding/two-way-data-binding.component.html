@@ -6,7 +6,7 @@
 		placeholder="Type your name here: "/>
 		<input type="submit" value="Send" (click)="handleSubmit()">
 	</form>
-	<div *ngIf="name !== ''">
+	<div *ngIf="name !== undefined">
 		<p>Hi there {{name}}</p>
 	</div>
 </div>

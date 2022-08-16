@@ -6,13 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./two-way-data-binding.component.css'],
 })
 export class TwoWayDataBindingComponent implements OnInit {
-  name: string = '';
+  name?: string;
 
   constructor() {}
 
   ngOnInit(): void {}
 
   handleSubmit(): void {
-    console.log('Submit the text ' + this.name);
+    console.log('Submit the text -> ' + this.name);
   }
 }
