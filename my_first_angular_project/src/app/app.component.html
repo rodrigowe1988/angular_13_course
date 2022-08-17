@@ -1,7 +1,6 @@
 <nav>
   <ul>
     <li><a routerLink="/">First Component</a></li>
-    <li><a routerLink="parent-data">Parent</a></li>
     <li><a routerLink="list">List</a></li>
     <li><a routerLink="table">Table</a></li>
     <li><a routerLink="directives">Directives</a></li>
@@ -16,4 +15,7 @@
   </ul>
 </nav>
 <router-outlet></router-outlet>
-<h3>Made by {{ userName }} &copy; All rights reserved</h3>
+<footer>
+  <app-parent-data [name]="userName" class="teste"></app-parent-data>
+</footer>
+

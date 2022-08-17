@@ -11,8 +11,8 @@ export class TesteComponent implements OnInit {
   profession: string = "Developer";
   hobbies = ['workout', 'study', 'yoga'];
   car = {
-    name: 'Ferrari 350',
-    color: 'red'
+    name: 'bicycle',
+    color: 'black'
   }
   constructor() { }
 

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Input } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { ChartJsComponent } from './components/chart-js/chart-js.component';
@@ -15,16 +15,16 @@ import { TwoWayDataBindingComponent } from './components/two-way-data-binding/tw
 
 const routes: Routes = [
   { path: '', component: TesteComponent },
-  { path: 'parent-data', component: ParentDataComponent },
+  { path: 'parent-data', component: ParentDataComponent, data: {testando: 'testando'}},
   { path: 'list', component: ListRenderComponent },
   { path: 'directives', component: DirectivesComponent },
   { path: 'if-render', component: IfRenderComponent },
   { path: 'events', component: EventsComponent },
   { path: 'table', component: TableListRenderComponent },
   { path: 'char', component: ChartJsComponent },
-  {path: 'emitter', component: EmitterComponent},
+  { path: 'emitter', component: EmitterComponent},
   { path: 'pipes', component: PipesComponent},
-  {path: 'two-way-binding', component: TwoWayDataBindingComponent}
+  { path: 'two-way-binding', component: TwoWayDataBindingComponent}
 ];
 
 @NgModule({

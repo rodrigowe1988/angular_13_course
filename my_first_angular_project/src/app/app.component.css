@@ -29,7 +29,8 @@ li a:hover {
   background-color: #04aa6d;
 }
 
-h3 {
-  display: flex;
-  justify-content: center;
+footer {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
 }

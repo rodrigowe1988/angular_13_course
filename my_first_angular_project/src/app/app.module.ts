@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { TesteComponent } from './components/teste/teste.component';
@@ -16,7 +17,6 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
 import { TableListRenderComponent } from './components/table-list-render/table-list-render.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { TwoWayDataBindingComponent } from './components/two-way-data-binding/two-way-data-binding.component';
-
 
 @NgModule({
   declarations: [
@@ -34,10 +34,8 @@ import { TwoWayDataBindingComponent } from './components/two-way-data-binding/tw
     PipesComponent,
     TwoWayDataBindingComponent,
   ],
-  imports: [
-    BrowserModule, FormsModule, AppRoutingModule
-  ],
+  imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
