@@ -6,6 +6,7 @@ import { DirectivesComponent } from './components/directives/directives.componen
 import { EmitterComponent } from './components/emitter/emitter.component';
 import { EventsComponent } from './components/events/events.component';
 import { IfRenderComponent } from './components/if-render/if-render.component';
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { ParentDataComponent } from './components/parent-data/parent-data.component';
 import { PipesComponent } from './components/pipes/pipes.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: '', component: TesteComponent },
   { path: 'parent-data', component: ParentDataComponent, data: {testando: 'testando'}},
   { path: 'list', component: ListRenderComponent },
+  { path: 'list/:id', component: ItemDetailComponent},
   { path: 'directives', component: DirectivesComponent },
   { path: 'if-render', component: IfRenderComponent },
   { path: 'events', component: EventsComponent },

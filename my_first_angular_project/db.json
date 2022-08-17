@@ -3,6 +3,11 @@
 		{ "id": 1, "name": "Jerry", "type": "Mouse", "age": 1 },
 		{ "id": 2, "name": "Tom", "type": "Cat", "age": 2 },
 		{ "id": 3, "name": "Spyke", "type": "Dog", "age": 4 },
-		{ "id": 4, "name": "Piu-Piu", "type": "Bird", "age": 1 }
-	 ]
+		{ "id": 4, "name": "Piu-Piu", "type": "Bird", "age": 1 },
+		{ "id": 5, "name": "animal1", "type": "type1", "age": 5},
+		{ "id": 6, "name": "animal2", "type": "type2", "age": 4},
+		{ "id": 7, "name": "animal3", "type": "type3", "age": 3},
+		{ "id": 8, "name": "animal4", "type": "type4", "age": 6},
+		{ "id": 9, "name": "animal5", "type": "type5", "age": 7}
+	]
 }

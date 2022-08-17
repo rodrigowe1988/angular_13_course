@@ -17,6 +17,7 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
 import { TableListRenderComponent } from './components/table-list-render/table-list-render.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { TwoWayDataBindingComponent } from './components/two-way-data-binding/two-way-data-binding.component';
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { TwoWayDataBindingComponent } from './components/two-way-data-binding/tw
     TableListRenderComponent,
     PipesComponent,
     TwoWayDataBindingComponent,
+    ItemDetailComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
   providers: [],

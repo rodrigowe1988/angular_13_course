@@ -2,7 +2,7 @@
   <h2>Animals:</h2>
   <ul>
     <li *ngFor="let animal of animals">
-      <b>Name:</b> {{ animal.name }} <b>Type:</b>{{ animal.type }}
+      <b>Name:</b> <a routerLink="/list/{{animal.id}}">{{ animal.name }}</a> <b>Type:</b>{{ animal.type }}
       <button (click)="showAge(animal)">Show age</button>
       <button (click)="removeAnimal(animal)">Remove this animal</button>
     </li>
