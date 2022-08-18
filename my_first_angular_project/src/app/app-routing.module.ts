@@ -1,5 +1,6 @@
 import { NgModule, Input } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { CalculatorComponent } from './components/calculator/calculator.component';
 
 import { ChartJsComponent } from './components/chart-js/chart-js.component';
 import { DirectivesComponent } from './components/directives/directives.component';
@@ -26,7 +27,8 @@ const routes: Routes = [
   { path: 'char', component: ChartJsComponent },
   { path: 'emitter', component: EmitterComponent},
   { path: 'pipes', component: PipesComponent},
-  { path: 'two-way-binding', component: TwoWayDataBindingComponent}
+  { path: 'two-way-binding', component: TwoWayDataBindingComponent},
+  {path: 'calculator', component: CalculatorComponent}
 ];
 
 @NgModule({

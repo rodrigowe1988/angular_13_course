@@ -18,6 +18,7 @@ import { TableListRenderComponent } from './components/table-list-render/table-l
 import { PipesComponent } from './components/pipes/pipes.component';
 import { TwoWayDataBindingComponent } from './components/two-way-data-binding/two-way-data-binding.component';
 import { ItemDetailComponent } from './components/item-detail/item-detail.component';
+import { CalculatorComponent } from './components/calculator/calculator.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ItemDetailComponent } from './components/item-detail/item-detail.compon
     PipesComponent,
     TwoWayDataBindingComponent,
     ItemDetailComponent,
+    CalculatorComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
   providers: [],
