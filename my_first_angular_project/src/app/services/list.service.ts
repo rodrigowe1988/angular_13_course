@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 
 import { Animal } from '../Animal';
-
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
@@ -24,4 +23,5 @@ export class ListService {
   getItem(id: number): Observable<Animal> {
     return this.http.get<Animal>(`${this.apiUrl}/${id}`);
   }
+
 }
