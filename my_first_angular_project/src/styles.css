@@ -12,14 +12,11 @@ a {
 body {
   background-color: #efefef;
   padding-bottom: 500px;
+  padding-top: 100px;
   max-width: 500px;
 }
 
 .divClass {
-
   padding: 2em;
   margin-bottom: 1em;
-}
-body {
-  padding-top: 100px;
 }

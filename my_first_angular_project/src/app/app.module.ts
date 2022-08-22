@@ -19,6 +19,7 @@ import { PipesComponent } from './components/pipes/pipes.component';
 import { TwoWayDataBindingComponent } from './components/two-way-data-binding/two-way-data-binding.component';
 import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 import { CalculatorComponent } from './components/calculator/calculator.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { CalculatorComponent } from './components/calculator/calculator.componen
     TwoWayDataBindingComponent,
     ItemDetailComponent,
     CalculatorComponent,
+    HeaderComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
   providers: [],

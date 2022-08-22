@@ -1,10 +1,10 @@
 <div class="divClass">
-	<p *ngIf="canShow">I only can appear here because my value is <b>true</b></p>
+	<p *ngIf="canShow" [ngStyle]="{color: 'green'}">I only can appear here because my value is <b>true</b></p>
 	<h2 *ngIf="name === 'Rodrigo'; else nameNotFound">The name of the user is Rodrigo.</h2>
 	<h2 *ngIf="name === 'Rogério'; else nameNotFound">The name of the user is Rodrigo</h2>
 	<ng-template #nameNotFound>
 		<div>
-			<h2>The name is unrecognized.</h2>
+			<h2 [ngStyle]="{color: 'red'}">The name is unrecognized.</h2>
 		</div>
 	</ng-template>
 </div>
