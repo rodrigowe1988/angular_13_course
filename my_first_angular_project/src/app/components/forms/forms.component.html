@@ -1,0 +1,70 @@
+<div class="divClass">
+  <form #form="ngForm" (ngSubmit)="submitForm(form)">
+    <label>
+      <h3>Nome</h3>
+      <input
+        type="text"
+        name="nome"
+        #nome="ngModel"
+        required
+        [ngModel]="nome.value"
+      /> <span *ngIf="nome.invalid && (nome.dirty && nome.touched)">Invalid</span>
+    </label>
+    <br />
+    <hr />
+    {{ nome.valid }} <br />
+    {{ nome.dirty }} <br />
+    {{ nome.touched }} <br />
+    <hr />
+    <br /><br />
+    <label>
+      <h3>Sobrenome</h3>
+      <input type="text" name="sobrenome" ngModel />
+    </label>
+    <br />
+    <br />
+    <label> <h3>Sexo</h3> </label><br />
+    <label>
+      Masculino
+      <input type="radio" name="sexo" value="Masculino" ngModel /> </label
+    ><br />
+    <label>
+      Feminino
+      <input type="radio" name="sexo" value="Feminino" ngModel /> </label
+    ><br />
+    <br />
+
+    <h3>Linguagens de Programação</h3>
+    <label>
+      Angular
+      <input type="checkbox" name="angular" ngModel id="" />
+    </label>
+    <br />
+    <label>
+      VueJs
+      <input type="checkbox" name="vuejs" ngModel id="" />
+    </label>
+    <br />
+    <label>
+      React
+      <input type="checkbox" name="react" ngModel id="" />
+    </label>
+
+    <br /><br />
+    <h3>Selecione um dos alimentos</h3>
+    <select name="comidas" ngModel>
+      <option *ngFor="let comida of comidas" [ngValue]="comida" selected>
+        {{ comida.comida }} -> {{ comida.preco }}
+      </option>
+    </select>
+
+    <br />
+	 <button [disabled]="form.invalid">Enviar formulário</button>
+  </form>
+
+  <br /><br />
+  {{ form.value | json }}
+  <br /><br />
+
+  Formulário validado: {{ form.valid }}
+</div>
