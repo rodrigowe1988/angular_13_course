@@ -20,6 +20,7 @@ import { TwoWayDataBindingComponent } from './components/two-way-data-binding/tw
 import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 import { CalculatorComponent } from './components/calculator/calculator.component';
 import { HeaderComponent } from './components/header/header.component';
+import { FormsComponent } from './components/forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { HeaderComponent } from './components/header/header.component';
     ItemDetailComponent,
     CalculatorComponent,
     HeaderComponent,
+    FormsComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
   providers: [],
